@@ -1,9 +1,22 @@
 
 public class QuickSort implements SortingAlgorithm {
+/**
+ * The main sort method
+ * Uses quick sort to sort the array
+ * 
+ * @param a the array to be sorted
+ */
   public void sort(int[] a) {
     quickSort(a, 0, a.length - 1);
   }
   
+/**
+ * Quick sorts the array
+ * 
+ * @param a the array to be sorted
+ * @param left the left index
+ * @param right the right index
+ */
   private void quickSort(int[] a, int left, int right) {
     if (left < right) {
       int pivot = partition(a, left, right);
